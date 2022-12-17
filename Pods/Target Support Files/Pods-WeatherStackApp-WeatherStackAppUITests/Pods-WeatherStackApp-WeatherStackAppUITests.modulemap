@@ -1,0 +1,6 @@
+framework module Pods_WeatherStackApp_WeatherStackAppUITests {
+  umbrella header "Pods-WeatherStackApp-WeatherStackAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
