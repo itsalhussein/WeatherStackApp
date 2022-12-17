@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 enum Api: URLRequestConvertible {
-    case home(request: HomeRequestModel)
+    case home(currentLocation: String)
 }
 
 extension Api: ApiRouter{
@@ -65,8 +65,8 @@ extension Api: ApiRouter{
     var parameters: Parameters? {
         switch self {
         
-        case .home(let request):
-            return request.toDictionary()
+        case .home:
+            return [:]
         }
     }
 

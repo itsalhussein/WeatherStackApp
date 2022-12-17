@@ -5,7 +5,6 @@ protocol ApiClientProtocol {
     func sendRequest<T: Codable>(_ urlConvertible: URLRequestConvertible, decadoingType: T.Type, completion: @escaping (Result<T, AFError>) -> Void )
 }
 
-
 class ApiClient: ApiClientProtocol {
     func sendRequest<T: Codable>(_ urlConvertible: URLRequestConvertible, decadoingType: T.Type, completion: @escaping (Result<T, AFError>) -> Void) {
         AF.request(urlConvertible).responseDecodable { (response: DataResponse<T, AFError>) in

@@ -7,12 +7,6 @@
 
 import Foundation
 
-//MARK: - Request Model
-
-struct HomeRequestModel : Codable{
-    var currentLocation = ""
-}
-
 //MARK: - Response Model
 
 struct HomeResponseModel : Codable {
